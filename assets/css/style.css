@@ -52,7 +52,7 @@ Default Style
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
   --font-family: 'Mulish', sans-serif;
-  --main-color: #ffb607;
+  --main-color: #001860;
   --body-color: #616161;
   --heading-color: #111111;
   --white-color: #ffffff;
@@ -312,7 +312,7 @@ Section Title Area Style*/
 }
 
 .section-title.white-title span {
-  color: var(--main-color);
+  color: var(--bs-yellow);
 }
 
 .section-title.white-title h2 {
@@ -476,8 +476,8 @@ Nav Area Style
   background-color: var(--white-color);
   -webkit-box-shadow: var(--box-shadow);
           box-shadow: var(--box-shadow);
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .navbar-area .main-nav .container-fluid {
@@ -492,6 +492,10 @@ Nav Area Style
 
 .navbar-area .main-nav .navbar .navbar-brand {
   font-size: 0;
+}
+
+.navbar-area .main-nav .navbar .navbar-brand img {
+  max-height: 90px;
 }
 
 .navbar-area .main-nav nav .navbar-nav .nav-item {
@@ -2945,7 +2949,7 @@ Footer Bottom Area Style
 }
 
 .footer-bottom-area .copyright-wrap p a {
-  color: var(--main-color);
+  color: var(--bs-orange);
 }
 
 .footer-bottom-area .copyright-wrap p i {
@@ -5448,6 +5452,7 @@ Single Course Area Style
 }
 
 .single-course-area .single-course-content img {
+  width: 100%;
   margin-bottom: 30px;
 }
 
