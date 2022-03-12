@@ -1534,6 +1534,12 @@ Course Area Style
   background-color: var(--white-color);
 }
 
+.single-course a img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
 .single-course .course-content {
   position: relative;
   -webkit-box-shadow: var(--box-shadow);
@@ -2509,7 +2515,8 @@ Feedback Area Style
 }
 
 .feedback-item .feedback-title img {
-  width: auto;
+  width: 68px;
+  height: auto;
   margin: auto;
   position: absolute;
   left: 0;
