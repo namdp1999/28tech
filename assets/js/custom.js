@@ -17,3 +17,29 @@ thumbs.find(".owl-item").removeClass("current").eq(current).addClass("current");
 if(current<start){thumbs.data("owl.carousel").to(current-onscreen,100,true);}}
 function syncPosition2(el){if(syncedSecondary){var number=el.item.index;bigimage.data("owl.carousel").to(number,100,true);}}
 thumbs.on("click",".owl-item",function(e){e.preventDefault();var number=$(this).index();bigimage.data("owl.carousel").to(number,300,true);});})(jQuery);
+
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.courses-form.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+        else {
+          $('.courses-form button[type=submit]').prop('disabled', true);
+          $('.courses-form button[type=submit]').addClass('disabled');
+          $('.courses-form button[type=submit]').text("Đã đăng ký!");
+          $('.hidden-message').show();
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()

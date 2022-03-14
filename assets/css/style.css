@@ -1221,9 +1221,18 @@ Banner Area Style
 }
 
 .banner-area-three .enroll-wrap .courses-form .default-btn:hover {
-  background-color: var(--white-color) !important;
-  color: var(--main-color) !important;
-  border-color: var(--main-color) !important;
+  background-color: var(--white-color)!important;
+  color: var(--main-color)!important;
+  border-color: var(--main-color)!important;
+}
+
+.banner-area-three .enroll-wrap .courses-form .default-btn.disabled,
+.banner-area-three .enroll-wrap .courses-form .default-btn.disabled:hover {
+  opacity: 0.4;
+  cursor: no-drop;
+  color: var(--white-color)!important;
+  background: var(--bs-success)!important;
+  border-color: var(--bs-success)!important;
 }
 
 @-webkit-keyframes moveBounce-top {
